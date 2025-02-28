@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Inventory - Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body style="background-image: url('assets/images/login-bg.jpg'); background-size: cover; background-position: center;">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Home Inventory Logo">
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Menu ⬇️</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Login</a>
+                    <a href="register.html">Register</a>
+                    <a href="about.html">About</a>
+                </div>
+            </li>
+            <li>
+                <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Login Form -->
+    <section class="login-container fade-in">
+        <h2>Login</h2>
+        <img src="assets/images/logo.png" alt="Login Illustration" class="form-image fade-in">
+        <form id="login-form" class="fade-in">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern=".{6,}">
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+</body>
+</html>
